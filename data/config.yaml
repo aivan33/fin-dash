@@ -1,0 +1,32 @@
+# FinDash Data Layer Configuration
+# This file defines data sources and output settings
+
+# Client identifier
+client_name: "demo_client"
+
+# Data sources
+sources:
+  # Example: Google Sheets source
+  # Uncomment and configure when you have credentials set up
+  # main_financials:
+  #   type: google_sheets
+  #   spreadsheet_id: "YOUR_SPREADSHEET_ID_HERE"  # From the Google Sheets URL
+  #   sheets:
+  #     - name: "Monthly Data"
+  #       range: "A1:Z1000"
+  #       output_key: "monthly_data"
+  #     - name: "Budget"
+  #       range: "A1:Z100"
+  #       output_key: "budget_data"
+
+  # Example: CSV source
+  # Uncomment and configure when you have a CSV file
+  # transactions:
+  #   type: csv
+  #   path: "./data/input/transactions.csv"
+  #   output_key: "transactions"
+
+# Output configuration
+output:
+  directory: "./data/output"
+  format: json
