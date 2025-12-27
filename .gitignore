@@ -1,57 +1,44 @@
-# Dependencies
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
 node_modules/
-.pnp
-.pnp.js
-.yarn/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# Build outputs
-.next/
-out/
-build/
-dist/
+# testing
+/coverage
 
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-*.egg-info/
+# next.js
+.next//
+/out/
 
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
+# production
+/build
 
-# OS
+# misc
 .DS_Store
-Thumbs.db
+*.pem
 
-# Environment
-.env
-.env.local
-.env.*.local
-
-# Credentials (protect secrets)
-data/credentials/*.json
-!data/credentials/.gitkeep
-
-# Data files (keep structure, ignore data)
-data/input/*.csv
-data/input/*.xlsx
-data/output/*.json
-data/output/*.csv
-!data/input/.gitkeep
-!data/output/.gitkeep
-
-# Logs
-*.log
+# debug
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# TypeScript
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
 *.tsbuildinfo
 next-env.d.ts
 
-# Testing
-coverage/
-.nyc_output/
+# admin dev files
+prompts/
