@@ -1,32 +1,25 @@
-# FinDash Data Layer Configuration
-# This file defines data sources and output settings
+# =============================================================================
+# Data Pipeline Configuration
+# =============================================================================
+# This is a boilerplate config. Customize for each client after forking.
+#
+# To configure:
+# 1. Create a Google Cloud service account and download credentials JSON
+# 2. Place credentials in data/credentials/google_service_account.json
+# 3. Share your Google Sheet with the service account email
+# 4. Uncomment and fill in the sources section below
 
-# Client identifier
-client_name: "demo_client"
-
-# Data sources
-sources:
-  # Example: Google Sheets source
-  # Uncomment and configure when you have credentials set up
-  # main_financials:
+sources: []
+  # Uncomment and configure for your client:
+  # - name: monthly_data
   #   type: google_sheets
-  #   spreadsheet_id: "YOUR_SPREADSHEET_ID_HERE"  # From the Google Sheets URL
-  #   sheets:
-  #     - name: "Monthly Data"
-  #       range: "A1:Z1000"
-  #       output_key: "monthly_data"
-  #     - name: "Budget"
-  #       range: "A1:Z100"
-  #       output_key: "budget_data"
+  #   sheet_id: "YOUR_GOOGLE_SHEET_ID_HERE"
+  #   sheet_name: "Monthly Data"
+  #   range: "A:Z"
 
-  # Example: CSV source
-  # Uncomment and configure when you have a CSV file
-  # transactions:
-  #   type: csv
-  #   path: "./data/input/transactions.csv"
-  #   output_key: "transactions"
-
-# Output configuration
 output:
-  directory: "./data/output"
-  format: json
+  directory: "output"
+  format: "json"
+
+# Optional: Add data transformations
+processors: []
