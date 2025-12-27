@@ -83,6 +83,11 @@
   --chart-7: oklch(0.696 0.236 352.634);
   --chart-8: oklch(0.696 0.17 131.246);
 
+  /* Semantic chart colors */
+  --chart-positive: oklch(0.6 0.169 162.48);
+  --chart-negative: oklch(0.577 0.245 27.325);
+  --chart-neutral: oklch(0.556 0 0);
+
   /* Sidebar specific */
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.205 0 0);
@@ -125,6 +130,11 @@
   --chart-6: oklch(0.646 0.222 216.798);
   --chart-7: oklch(0.696 0.236 352.634);
   --chart-8: oklch(0.696 0.17 131.246);
+
+  /* Semantic chart colors */
+  --chart-positive: oklch(0.6 0.169 162.48);
+  --chart-negative: oklch(0.577 0.245 27.325);
+  --chart-neutral: oklch(0.708 0 0);
 
   /* Sidebar specific - dark */
   --sidebar: oklch(0.269 0 0);

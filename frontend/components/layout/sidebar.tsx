@@ -1,7 +1,7 @@
 "use client"
 
 import { usePathname } from "next/navigation"
-import { LayoutDashboard, Table, Settings } from "lucide-react"
+import { LayoutDashboard, BarChart3, Table, Settings } from "lucide-react"
 import { SidebarItem } from "./sidebar-item"
 import { ThemeToggle } from "@/components/theme/theme-toggle"
 import { Separator } from "@/components/ui/separator"
@@ -12,6 +12,11 @@ const navItems = [
     icon: LayoutDashboard,
     label: "Dashboard",
     href: "/",
+  },
+  {
+    icon: BarChart3,
+    label: "Charts",
+    href: "/charts",
   },
   {
     icon: Table,
