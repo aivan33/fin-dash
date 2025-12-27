@@ -42,3 +42,5 @@ next-env.d.ts
 
 # admin dev files
 prompts/
+.next/
+.next/
